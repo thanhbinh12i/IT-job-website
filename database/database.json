@@ -1,0 +1,316 @@
+{
+  "company": [
+    {
+      "id": 1,
+      "companyName": "FPT Software",
+      "phone": "+842437689999",
+      "email": "contact@fpt-software.com",
+      "password": "encryptedPassword1",
+      "token": "fptToken1234567890",
+      "address": "FPT Tower, Duy Tân, Cầu Giấy, Hà Nội, Việt Nam",
+      "workingTime": "8:00 AM - 5:30 PM",
+      "website": "https://www.fpt-software.com",
+      "quantityPeople": 20000,
+      "description": "Leading IT services company in Vietnam.",
+      "detail": "FPT Software is a global IT services provider headquartered in Vietnam, specializing in software outsourcing, digital transformation, and IT consulting."
+    },
+    {
+      "id": 2,
+      "companyName": "VNG Corporation",
+      "phone": "+842837998888",
+      "email": "info@vng.com.vn",
+      "password": "encryptedPassword2",
+      "token": "vngToken0987654321",
+      "address": "VNG Campus, Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh, Việt Nam",
+      "workingTime": "8:30 AM - 6:00 PM",
+      "website": "https://www.vng.com.vn",
+      "quantityPeople": 3500,
+      "description": "Vietnam's leading technology company.",
+      "detail": "VNG Corporation is a leading technology company in Vietnam, known for its online gaming, digital content, cloud computing, and e-commerce platforms."
+    },
+    {
+      "id": 3,
+      "companyName": "TMA Solutions",
+      "phone": "+842837397979",
+      "email": "contact@tmasolutions.com",
+      "password": "encryptedPassword3",
+      "token": "tmaToken1122334455",
+      "address": "TMA Building, Quang Trung Software City, Quận 12, TP. Hồ Chí Minh, Việt Nam",
+      "workingTime": "8:00 AM - 5:00 PM",
+      "website": "https://www.tmasolutions.com",
+      "quantityPeople": 2500,
+      "description": "Leading software outsourcing company in Vietnam.",
+      "detail": "TMA Solutions is one of the largest software outsourcing companies in Vietnam, offering a wide range of IT services including software development, testing, and IT consulting."
+    },
+    {
+      "id": 4,
+      "companyName": "CMC Corporation",
+      "phone": "+842438360222",
+      "email": "contact@cmc.com.vn",
+      "password": "encryptedPassword4",
+      "token": "cmcToken2233445566",
+      "address": "CMC Tower, Duy Tân, Cầu Giấy, Hà Nội, Việt Nam",
+      "workingTime": "8:00 AM - 5:30 PM",
+      "website": "https://www.cmc.com.vn",
+      "quantityPeople": 3000,
+      "description": "Top IT and telecoms company in Vietnam.",
+      "detail": "CMC Corporation is a leading technology and telecommunications company in Vietnam, offering IT solutions, services, and digital transformation consulting."
+    },
+    {
+      "id": 5,
+      "companyName": "Haravan",
+      "phone": "+842839268888",
+      "email": "support@haravan.com",
+      "password": "encryptedPassword5",
+      "token": "haravanToken3344556677",
+      "address": "Haravan Building, Lý Thường Kiệt, Quận 11, TP. Hồ Chí Minh, Việt Nam",
+      "workingTime": "8:00 AM - 6:00 PM",
+      "website": "https://www.haravan.com",
+      "quantityPeople": 500,
+      "description": "Leading e-commerce platform provider in Vietnam.",
+      "detail": "Haravan is a leading e-commerce platform provider in Vietnam, offering solutions for online stores, omni-channel retail, and digital marketing."
+    }
+  ],
+  "city": [
+    {
+      "key": 1,
+      "value": "Hà Nội"
+    },
+    {
+      "key": 2,
+      "value": "TP. Hồ Chí Minh"
+    },
+    {
+      "key": 3,
+      "value": "Đà Nẵng"
+    },
+    {
+      "key": 4,
+      "value": "Hải Phòng"
+    },
+    {
+      "key": 5,
+      "value": "Cần Thơ"
+    }
+  ],
+  "tags": [
+    {
+      "key": 1,
+      "value": "JavaScript"
+    },
+    {
+      "key": 2,
+      "value": "Java"
+    },
+    {
+      "key": 3,
+      "value": "Python"
+    },
+    {
+      "key": 4,
+      "value": "C#"
+    },
+    {
+      "key": 5,
+      "value": "PHP"
+    },
+    {
+      "key": 6,
+      "value": "Ruby"
+    },
+    {
+      "key": 7,
+      "value": "Go"
+    },
+    {
+      "key": 8,
+      "value": "Swift"
+    },
+    {
+      "key": 9,
+      "value": "Kotlin"
+    },
+    {
+      "key": 10,
+      "value": "TypeScript"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "idCompany": 1,
+      "name": "Senior Frontend Developer",
+      "tags": ["JavaScript", "TypeScript"],
+      "salary": "2000 - 3000 USD",
+      "description": "Develop and maintain web applications using React and TypeScript.",
+      "status": true,
+      "city": ["Hà Nội", "TP. Hồ Chí Minh"],
+      "createAt": "29-04-2023 21:22:17",
+      "updateAt": "30-04-2023 14:12:25"
+    },
+    {
+      "id": 2,
+      "idCompany": 2,
+      "name": "Java Backend Developer",
+      "tags": ["Java", "Python"],
+      "salary": "1500 - 2500 USD",
+      "description": "Build and optimize backend services using Java and Spring framework.",
+      "status": true,
+      "city": ["TP. Hồ Chí Minh", "Đà Nẵng"],
+      "createAt": "01-05-2023 10:05:45",
+      "updateAt": "02-05-2023 09:15:30"
+    },
+    {
+      "id": 3,
+      "idCompany": 3,
+      "name": "Fullstack Developer",
+      "tags": ["JavaScript", "Java", "PHP"],
+      "salary": "1800 - 2700 USD",
+      "description": "Work on both frontend and backend tasks using JavaScript, Java, and PHP.",
+      "status": false,
+      "city": ["Hải Phòng", "Cần Thơ"],
+      "createAt": "28-04-2023 08:30:00",
+      "updateAt": "28-04-2023 08:30:00"
+    },
+    {
+      "id": 4,
+      "idCompany": 4,
+      "name": "Data Scientist",
+      "tags": ["Python", "Go"],
+      "salary": "2200 - 3500 USD",
+      "description": "Analyze large datasets and build predictive models using Python and Go.",
+      "status": true,
+      "city": ["Hà Nội", "TP. Hồ Chí Minh", "Đà Nẵng"],
+      "createAt": "15-05-2023 11:00:00",
+      "updateAt": "20-05-2023 15:45:00"
+    },
+    {
+      "id": 5,
+      "idCompany": 5,
+      "name": "Mobile Developer",
+      "tags": ["Swift", "Kotlin"],
+      "salary": "2000 - 3200 USD",
+      "description": "Develop mobile applications for iOS and Android using Swift and Kotlin.",
+      "status": true,
+      "city": ["TP. Hồ Chí Minh", "Đà Nẵng", "Cần Thơ"],
+      "createAt": "05-06-2023 13:30:00",
+      "updateAt": "10-06-2023 16:25:00"
+    },
+    {
+      "id": 6,
+      "idCompany": 1,
+      "name": "Frontend Developer",
+      "tags": ["JavaScript","TypeScript"],
+      "salary": "1800 - 2600 USD",
+      "description": "Develop responsive and interactive web interfaces using JavaScript and TypeScript.",
+      "status": true,
+      "city": ["Hà Nội", "Đà Nẵng"],
+      "createAt": "05-07-2023 09:30:00",
+      "updateAt": "10-07-2023 16:20:00"
+    },
+    {
+      "id": 7,
+      "idCompany": 2,
+      "name": "Fullstack Developer",
+      "tags": [ "JavaScript", "PHP","TypeScript"],
+      "salary": "2200 - 3200 USD",
+      "description": "Work on both frontend and backend systems using JavaScript, PHP, and TypeScript.",
+      "status": true,
+      "city": ["TP. Hồ Chí Minh", "Cần Thơ"],
+      "createAt": "08-07-2023 10:00:00",
+      "updateAt": "12-07-2023 14:45:00"
+    },
+    {
+      "id": 8,
+      "idCompany": 1,
+      "name": "Senior Frontend Developer",
+      "tags": ["JavaScript", "TypeScript", "Swift"],
+      "salary": "2500 - 3500 USD",
+      "description": "Lead the development of web applications and mentor junior developers in JavaScript and TypeScript.",
+      "status": true,
+      "city": ["Hà Nội", "Đà Nẵng", "TP. Hồ Chí Minh"],
+      "createAt": "15-07-2023 11:45:00",
+      "updateAt": "20-07-2023 15:10:00"
+    },
+    {
+      "id": 9,
+      "idCompany": 2,
+      "name": "Junior Fullstack Developer",
+      "tags": ["JavaScript", "Python","Kotlin"],
+      "salary": "1500 - 2200 USD",
+      "description": "Assist in building fullstack applications using JavaScript, Python, and Kotlin.",
+      "status": true,
+      "city": ["TP. Hồ Chí Minh", "Hải Phòng"],
+      "createAt": "20-07-2023 09:00:00",
+      "updateAt": "25-07-2023 11:30:00"
+    }
+
+  ],
+  "cv": [
+    {
+      "id": 1,
+      "idCompany": 1,
+      "idJob": 1,
+      "name": "Nguyễn Văn A",
+      "phone": "+84901234567",
+      "email": "nguyenvana@example.com",
+      "description": "Tôi là một Frontend Developer với 5 năm kinh nghiệm làm việc với React và TypeScript.",
+      "linkProject": "https://github.com/nguyenvana/my-projects",
+      "city": 1,
+      "statusRead": false,
+      "createAt": "29-04-2023 21:22:17"
+    },
+    {
+      "id": 2,
+      "idCompany": 2,
+      "idJob": 2,
+      "name": "Trần Thị B",
+      "phone": "+84987654321",
+      "email": "tranthib@example.com",
+      "description": "Backend Developer với 4 năm kinh nghiệm trong phát triển dịch vụ bằng Java và Spring.",
+      "linkProject": "https://bitbucket.org/tranthib/projects",
+      "city": 2,
+      "statusRead": true,
+      "createAt": "30-04-2023 10:45:30"
+    },
+    {
+      "id": 3,
+      "idCompany": 3,
+      "idJob": 3,
+      "name": "Lê Văn C",
+      "phone": "+84812345678",
+      "email": "levanc@example.com",
+      "description": "Fullstack Developer với kỹ năng mạnh mẽ về JavaScript, Java, và PHP.",
+      "linkProject": "https://gitlab.com/levanc/portfolio",
+      "city": 3,
+      "statusRead": false,
+      "createAt": "01-05-2023 14:30:00"
+    },
+    {
+      "id": 4,
+      "idCompany": 4,
+      "idJob": 4,
+      "name": "Phạm Thị D",
+      "phone": "+84765432123",
+      "email": "phamthid@example.com",
+      "description": "Data Scientist với khả năng phân tích dữ liệu lớn và xây dựng mô hình dự đoán.",
+      "linkProject": "https://kaggle.com/phamthid",
+      "city": 2,
+      "statusRead": true,
+      "createAt": "03-05-2023 09:15:45"
+    },
+    {
+      "id": 5,
+      "idCompany": 5,
+      "idJob": 5,
+      "name": "Hoàng Văn E",
+      "phone": "+84678901234",
+      "email": "hoangvane@example.com",
+      "description": "Mobile Developer với kinh nghiệm phát triển ứng dụng cho iOS và Android.",
+      "linkProject": "https://hoangvane.dev/portfolio",
+      "city": 5,
+      "statusRead": false,
+      "createAt": "05-05-2023 11:00:00"
+    }
+  ]
+}
