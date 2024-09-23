@@ -1,8 +1,10 @@
-import { Button } from "antd";
+
 import logo from "./logo.jpg"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { getCookie } from "../../helpers/cookie";
 
 function Header() {
+      const token = getCookie("token");
       return (
             <>
                   <header className="layout-default__header">
@@ -16,8 +18,18 @@ function Header() {
                               <h1>IT Job Portal</h1>
                         </div>
                         <div className="layout-default__header-right">
-                              <Button type="primary" className="btn btn-login">Login</Button>
-                              <Button className="btn btn-signup">Sign Up</Button>
+                              {token ? (
+                                    <>
+                                          <NavLink to="/admin">Quản lý</NavLink>
+                                          <NavLink to="/logout">Đăng xuất</NavLink>
+                                    </>
+
+                              ) : (
+                                    <>
+                                          <NavLink to="/login">Đăng nhập</NavLink>
+                                          <NavLink to="/register">Đăng ký</NavLink>
+                                    </>
+                              )}
                         </div>
 
                   </header>
