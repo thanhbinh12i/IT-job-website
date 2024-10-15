@@ -5,7 +5,7 @@ import { deleteJob } from "../../services/jobServices";
 function DeleteJob(props){
       const {record, onReload} = props;
       const handleDelete = async () => {
-            const response = await deleteJob();
+            const response = await deleteJob(record.id);
             if(response){
                   onReload();
             }

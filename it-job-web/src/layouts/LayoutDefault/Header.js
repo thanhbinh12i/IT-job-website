@@ -2,9 +2,11 @@
 import logo from "./logo.jpg"
 import { Link, NavLink } from "react-router-dom";
 import { getCookie } from "../../helpers/cookie";
+import { useSelector } from "react-redux";
 
 function Header() {
       const token = getCookie("token");
+      const isLoggedIn = useSelector((state) => state.loginReducer);
       return (
             <>
                   <header className="layout-default__header">
