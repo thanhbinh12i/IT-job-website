@@ -1,9 +1,10 @@
 import { getAllCompany } from "../../services/companyServices";
-import { Button, Card, Col, Row } from "antd";
+import { Card, Col, Row } from "antd";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import GoBack from "../../components/Goback";
 
-function Company(){
+function Company() {
       const [data, setData] = useState([]);
       useEffect(() => {
             const fetchApi = async () => {
@@ -16,6 +17,7 @@ function Company(){
       }, [])
       return (
             <>
+                  <GoBack />
                   <h2>Danh sách các công ty</h2>
                   <Row gutter={[20, 20]}>
                         {data.map((item) => (
@@ -42,9 +44,6 @@ function Company(){
                               </Col>
                         ))}
                   </Row>
-                  <Link to="/company">
-                        <Button className="mt-20">Xem thêm</Button>
-                  </Link>
             </>
       )
 }

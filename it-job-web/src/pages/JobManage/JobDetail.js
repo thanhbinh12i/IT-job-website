@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getDetailJob } from "../../services/jobServices";
 import { Tag } from "antd";
+import GoBack from "../../components/Goback";
 
 function JobDetailAdmin() {
       const params = useParams();
@@ -17,6 +18,7 @@ function JobDetailAdmin() {
       }, [])
       return (
             <>
+                  <GoBack />
                   {data && (
                         <>
                               <h1>{data.name}</h1>
@@ -45,7 +47,7 @@ function JobDetailAdmin() {
                                     Ngày tạo: <strong>{data.createAt}</strong>
                               </div>
                               <div className="mb-20">
-                              Cập nhật: <strong>{data.updateAt}</strong>
+                                    Cập nhật: <strong>{data.updateAt}</strong>
                               </div>
                               <div className="mb-20">
                                     <span>Thành phố: </span>

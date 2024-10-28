@@ -1,26 +1,26 @@
 import { Menu } from "antd";
-import {AppstoreOutlined} from "@ant-design/icons";
+import { BankOutlined, DashboardOutlined, FileOutlined, ProfileOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 function MenuSider() {
       const items = [
             {
                   label: <Link to="/admin">Tổng quan</Link>,
-                  icon: <AppstoreOutlined />,
+                  icon: <DashboardOutlined />,
                   key: "/admin"
             },
             {
                   label: <Link to="/info-company">Thông tin công ty</Link>,
-                  icon: <AppstoreOutlined />,
+                  icon: <BankOutlined />,
                   key: "/info-company"
             },
             {
                   label: <Link to="/job-manage">Quản lý việc làm</Link>,
-                  icon: <AppstoreOutlined />,
+                  icon: <ProfileOutlined />,
                   key: "/job-manage"
             },
             {
                   label: <Link to="/cv-manage">Quản lý CV</Link>,
-                  icon: <AppstoreOutlined />,
+                  icon: <FileOutlined />,
                   key: "/cv-manage"
             }
       ]

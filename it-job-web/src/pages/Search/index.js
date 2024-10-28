@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import SearchList from "./SearchList";
 import { getAllJob } from "../../services/jobServices";
+import GoBack from "../../components/Goback";
 
-function Search(){
+function Search() {
       const [searchParams, setSearchParams] = useSearchParams();
       const [data, setData] = useState();
       const citySearch = searchParams.get("city") || "";
@@ -12,7 +13,7 @@ function Search(){
       useEffect(() => {
             const fetchApi = async () => {
                   const response = await getAllJob();
-                  if(response){
+                  if (response) {
                         const newData = response.filter((item) => {
                               const city = citySearch ? item.city?.includes(citySearch) : true;
                               console.log(city);
@@ -24,18 +25,19 @@ function Search(){
                   }
             }
             fetchApi();
-      },[]);
+      }, []);
       return (
             <>
-            <div>
-                  <strong>Kết quả tìm kiếm: </strong>
-                  {citySearch && <Tag>{citySearch}</Tag>}
-                  {keywordSearch && <Tag>{keywordSearch}</Tag>}
+                  <GoBack />
+                  <div>
+                        <strong>Kết quả tìm kiếm: </strong>
+                        {citySearch && <Tag>{citySearch}</Tag>}
+                        {keywordSearch && <Tag>{keywordSearch}</Tag>}
 
-            </div>
-            {data && (
-                  <SearchList data={data}/>
-            )}
+                  </div>
+                  {data && (
+                        <SearchList data={data} />
+                  )}
             </>
       )
 }

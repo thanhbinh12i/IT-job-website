@@ -1,32 +1,42 @@
 import { useEffect, useState } from "react";
 import { getCookie } from "../../helpers/cookie";
 import { getListCV } from "../../services/cvServices";
-import CVJobName from "./CVJobName";
 import { Link } from "react-router-dom";
 import { Button, Tag, Tooltip, Table } from "antd";
 import { EyeOutlined } from "@ant-design/icons"
 import DeleteCV from "./DeleteCV";
+import { getDetailJob } from "../../services/jobServices";
 function CVList(props) {
       const idCompany = getCookie("id");
       const { className = "" } = props;
       const [listCV, setListCV] = useState([]);
       const fetchApi = async () => {
             const response = await getListCV(idCompany);
-            if (response) {
-                  setListCV(response.reverse());
+            let result = [];
+            for (let i = 0; i < response.length; i++) {
+                  const object = {
+                        ...response[i],
+                        nameJob: ""
+                  }
+
+                  const job = await getDetailJob(response[i].idJob);
+                  object.nameJob = job.name;
+                  result.push(object);
             }
+            setListCV(result.reverse());
       }
       useEffect(() => {
             fetchApi();
-      }, [])
+            // eslint-disable-next-line
+      }, [idCompany])
       const handleReload = () => {
             fetchApi();
       }
       const column = [
             {
                   title: "Tên job",
-                  dataIndex: "idJob",
-                  key: "idJob"
+                  dataIndex: "nameJob",
+                  key: "nameJob"
             },
             {
                   title: "Họ tên",
@@ -74,7 +84,7 @@ function CVList(props) {
                                           <Button icon={<EyeOutlined />}></Button>
                                     </Tooltip>
                               </Link>
-                              <DeleteCV record={record} onReload={handleReload}/>
+                              <DeleteCV record={record} onReload={handleReload} />
                         </>
                   )
             }

@@ -15,21 +15,21 @@ function InfoCompany(){
                   }
             }
             fetchApi();
-      },[])
+      },[idCompany])
       return (
             <>
             {info && (
                   <Card title="Thông tin công ty" size="small">
-                        <div>
+                        <div className="mb-10">
                               Tên công ty: <strong>{info.companyName}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               Email : <strong>{info.email}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               Số điện thoại: <strong>{info.phone}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               Số nhân viên: <strong>{info.quantityPeople}</strong>
                         </div>
                   </Card>

@@ -23,18 +23,18 @@ function JobStatistic(){
                   }
             }
             fetchApi();
-      },[])
+      },[idCompany])
       return (
             <>
             {data && (
                   <Card title="Job">
-                        <div>
+                        <div className="mb-10">
                               Số lượng job: <strong>{data.total}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               Job đang bật: <strong>{data.statusTrue}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                              Job đang tắt đọc: <strong>{data.statusFalse}</strong>
                         </div>
                   </Card>

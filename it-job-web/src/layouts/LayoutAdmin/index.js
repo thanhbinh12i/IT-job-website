@@ -1,4 +1,4 @@
-import { Layout } from "antd";
+import { Button, Layout } from "antd";
 import "./LayoutDefault.scss";
 import logo from "../../images/logo.png";
 import logoFold from "../../images/logo-fold.png";
@@ -9,13 +9,13 @@ import MenuSider from "./MenuSider";
 const { Sider, Content } = Layout;
 
 
-function LayoutAdmin(){
+function LayoutAdmin() {
       const [collapse, setCollapse] = useState(false);
       return (
             <>
-            <Layout>
+                  <Layout>
                         <header className="header">
-                              <div className={"header__logo "  + (collapse && "header__logo--collapse")}>
+                              <div className={"header__logo " + (collapse && "header__logo--collapse")}>
                                     <img src={collapse ? logoFold : logo} alt="" />
                               </div>
                               <div className="header__nav">
@@ -25,8 +25,9 @@ function LayoutAdmin(){
                                           </div>
                                     </div>
                                     <div className="header__nav-right">
-                                          <NavLink to="/">Trang chủ</NavLink>
-                                          <NavLink to="/logout">Đăng xuất</NavLink>
+                                          <NavLink to="/" className="mr-20">
+                                                <Button type="primary">Trang chủ</Button>
+                                          </NavLink>
                                     </div>
                               </div>
                         </header>

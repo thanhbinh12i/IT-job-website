@@ -26,10 +26,10 @@ function SearchList(props) {
             <>
                   {dataFinal.length > 0 ? (
                         <div className="mt-20">
-                              <Row gutter={[20,20]}>
+                              <Row gutter={[20, 20]}>
                                     {dataFinal.map((item) => (
                                           <Col span={8} key={item.id}>
-                                                <JobItem item={item}/>
+                                                <JobItem item={item} />
                                           </Col>
                                     ))}
                               </Row>

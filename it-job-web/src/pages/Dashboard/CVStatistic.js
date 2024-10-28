@@ -23,18 +23,18 @@ function CVStatistic(){
                   }
             }
             fetchApi();
-      },[])
+      },[idCompany])
       return (
             <>
             {data && (
                   <Card title="CV">
-                        <div>
+                        <div className="mb-10">
                               Số lượng CV: <strong>{data.total}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               CV chưa đọc: <strong>{data.statusTrue}</strong>
                         </div>
-                        <div>
+                        <div className="mb-10">
                               CV đã đọc: <strong>{data.statusFalse}</strong>
                         </div>
                   </Card>
